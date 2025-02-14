@@ -127,7 +127,7 @@ const ScrambledTitle: React.FC = () => {
       className="text-white text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider justify-center text-center whitespace-nowrap"
       style={{ fontFamily: "monospace", minWidth: "80vw" }}
     >
-      RAINING LETTERS
+      The Future Starts here.
     </h1>
   )
 }
