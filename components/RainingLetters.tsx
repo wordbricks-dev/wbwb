@@ -369,7 +369,7 @@ const RainingLetters: React.FC = () => {
 
               <div className="group cursor-pointer opacity-0 animate-slideUpDelayed4">
                 <a 
-                  href="https://wordbricks.super.site/front-end-engineer"
+                  href="https://wordbricks.super.site/machine-learning-engineer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
