@@ -252,7 +252,7 @@ const RainingLetters: React.FC = () => {
         </div>
 
         {/* Learn More Link */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="absolute bottom-16 md:bottom-12 left-1/2 transform -translate-x-1/2 z-20">
           <a
             onClick={() => {
               secondPageRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -292,7 +292,7 @@ const RainingLetters: React.FC = () => {
       </div>
 
       {/* Second Page */}
-      <div ref={secondPageRef} className="relative w-full h-screen bg-black flex flex-col items-center justify-center px-4 md:px-8 snap-start"
+      <div ref={secondPageRef} className="relative w-full h-screen bg-black flex flex-col items-center justify-center px-4 md:px-8 pb-16 md:pb-8 snap-start"
         style={{
           background: 'linear-gradient(to bottom, #000000, #111111)'
         }}
@@ -319,15 +319,15 @@ const RainingLetters: React.FC = () => {
       </div>
 
       {/* Third Page - Job Board */}
-      <div className="relative w-full h-screen bg-black flex flex-col items-center px-4 md:px-8 snap-start overflow-y-auto md:overflow-y-visible"
+      <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center px-4 md:px-8 pb-20 md:pb-8 snap-start overflow-y-auto md:overflow-y-visible"
         style={{
           background: 'linear-gradient(to bottom, #000000, #111111)'
         }}
       >
         {/* Main content container */}
-        <div className="max-w-[720px] w-full mx-auto flex flex-col min-h-screen">
+        <div className="max-w-[720px] w-full mx-auto flex flex-col justify-center flex-1">
           {/* Job board content */}
-          <div className="flex-1 py-12 md:py-20 opacity-0 animate-fadeIn">
+          <div className="opacity-0 animate-fadeIn">
             <h2 className="text-white text-lg md:text-2xl mb-4 text-left font-bold animate-slideUp">
               Careers
             </h2>
@@ -369,7 +369,7 @@ const RainingLetters: React.FC = () => {
 
               <div className="group cursor-pointer opacity-0 animate-slideUpDelayed4">
                 <a 
-                  href="https://wordbricks.super.site/machine-learning-engineer"
+                  href="https://wordbricks.super.site/front-end-engineer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -394,9 +394,11 @@ const RainingLetters: React.FC = () => {
               </a>
             </p>
           </div>
+        </div>
 
-          {/* Copyright text */}
-          <div className="flex justify-between items-center py-4 md:pb-8 max-w-[720px] w-full opacity-0 animate-slideUpDelayed7">
+        {/* Copyright text - moved to bottom with more padding on mobile */}
+        <div className="py-4 pb-12 md:pb-8 max-w-[720px] w-full opacity-0 animate-slideUpDelayed7">
+          <div className="flex justify-between items-center">
             <p className="text-gray-500 text-xs">
               © 2025 Wordbricks. All rights reserved.
             </p>
