@@ -92,3 +92,88 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.blur-image {
+  position: relative;
+  isolation: isolate;
+}
+
+.blur-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  pointer-events: none;
+}
+
+.fade0 {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.fade1 {
+  animation: fadeIn 0.5s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.fade2 {
+  animation: fadeIn 0.5s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.fade3 {
+  animation: fadeIn 0.5s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.fade4 {
+  animation: fadeIn 0.5s ease-out 0.8s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #DAD6C8;
+}
+
+.fade6 {
+  animation: fadeIn 0.5s ease-out 1s forwards;
+  opacity: 0;
+}
+
+.fade7 {
+  animation: fadeIn 0.5s ease-out 1.2s forwards;
+  opacity: 0;
+}
+
+.fade8 {
+  animation: fadeIn 0.5s ease-out 1.4s forwards;
+  opacity: 0;
+}
+
+.animate-slideunderline {
+  position: relative;
+  cursor: pointer;
+}
+
+.bg-newdim {
+  background-color: #DAD6C8;
+  opacity: 0.2;
+}
+
+.text-newtexthover {
+  color: #DAD6C8;
+  opacity: 0.6;
+}
