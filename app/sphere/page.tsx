@@ -73,7 +73,7 @@ export default function SpherePage() {
                           Frontend Engineer
                         </a>
                       </td>
-                      <td className="py-2 whitespace-nowrap text-sm font-medium text-newtexthover">San Francisco</td>
+                      <td className="py-2 whitespace-nowrap text-sm font-medium text-newtexthover">San Francisco Bay Area</td>
                     </tr>
                     <tr className="flex justify-between items-center gap-3">
                       <td className="py-2 whitespace-nowrap text-sm cursor-pointer">
@@ -84,7 +84,7 @@ export default function SpherePage() {
                           Backend Engineer
                         </a>
                       </td>
-                      <td className="py-2 whitespace-nowrap text-sm font-medium text-newtexthover">San Francisco</td>
+                      <td className="py-2 whitespace-nowrap text-sm font-medium text-newtexthover">San Francisco Bay Area</td>
                     </tr>
                     <tr className="flex justify-between items-center gap-3">
                       <td className="py-2 whitespace-nowrap text-sm cursor-pointer">
@@ -95,7 +95,7 @@ export default function SpherePage() {
                           Machine Learning Engineer
                         </a>
                       </td>
-                      <td className="py-2 whitespace-nowrap text-sm font-medium text-newtexthover">San Francisco</td>
+                      <td className="py-2 whitespace-nowrap text-sm font-medium text-newtexthover">San Francisco Bay Area</td>
                     </tr>
                   </tbody>
                 </table>
