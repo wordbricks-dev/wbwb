@@ -337,7 +337,7 @@ const RainingLetters: React.FC = () => {
             <div className="space-y-4 md:space-y-6">
               <div className="group cursor-pointer opacity-0 animate-slideUpDelayed2">
                 <a 
-                  href="https://wordbricks.super.site/front-end-engineer"
+                  href="https://www.wordbricks.ai/sphere/front-end-enginee"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -353,7 +353,7 @@ const RainingLetters: React.FC = () => {
 
               <div className="group cursor-pointer opacity-0 animate-slideUpDelayed3">
                 <a 
-                  href="https://wordbricks.super.site/back-end-engineer"
+                  href="https://www.wordbricks.ai/sphere/back-end-engineer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -369,7 +369,7 @@ const RainingLetters: React.FC = () => {
 
               <div className="group cursor-pointer opacity-0 animate-slideUpDelayed4">
                 <a 
-                  href="https://wordbricks.super.site/front-end-engineer"
+                  href="https://www.wordbricks.ai/sphere/machine-learning-engineer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
