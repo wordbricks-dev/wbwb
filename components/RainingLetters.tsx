@@ -337,7 +337,7 @@ const RainingLetters: React.FC = () => {
             <div className="space-y-4 md:space-y-6">
               <div className="group cursor-pointer opacity-0 animate-slideUpDelayed2">
                 <a 
-                  href="https://www.wordbricks.ai/sphere/front-end-enginee"
+                  href="https://www.wordbricks.ai/sphere/front-end-engineer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
