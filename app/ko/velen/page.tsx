@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from 'next/link';
 import {
     Building2,
@@ -22,6 +23,24 @@ import {
     FileText,
     Database
 } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: "Velen - 데이터 속에 숨겨진 성장의 순간을 발견하세요",
+    description: "Velen은 쏟아지는 데이터 속에서 성장의 기회와 리스크를 찾아드리는 AI 비즈니스 분석 솔루션입니다. 명확한 의사결정을 위한 Daily Aha를 만나보세요.",
+    keywords: ["데이터 분석", "비즈니스 인텔리전스", "그로스 해킹", "Velen", "벨렌", "데이터 시각화", "AI 분석"],
+    openGraph: {
+        title: "Velen - 데이터 기반의 확실한 의사결정",
+        description: "쏟아지는 대시보드 대신, 명확한 Actionable Insight를 제공합니다. Velen과 함께 다음 성장을 준비하세요.",
+        type: "website",
+        locale: "ko_KR",
+        // images: [{ url: '/images/velen_og.png', width: 1200, height: 630, alt: 'Velen Landing Page' }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Velen - 데이터 기반의 확실한 의사결정",
+        description: "쏟아지는 대시보드 대신, 명확한 Actionable Insight를 제공합니다.",
+    },
+};
 
 export default function VelenLandingPage() {
     return (
