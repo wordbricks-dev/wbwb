@@ -71,7 +71,7 @@ export default function VelenLandingPage() {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {/* Problem 1: Dashboard Flood */}
-                        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 hover:border-purple-500/30 transition-colors group">
+                        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 hover:border-purple-500/30 transition-colors group text-center">
                             <div className="w-20 h-20 bg-slate-950 rounded-2xl flex items-center justify-center mb-8 mx-auto border border-slate-800 group-hover:border-purple-500/30 transition-colors shadow-lg">
                                 <LayoutDashboard className="w-10 h-10 text-purple-400" />
                             </div>
@@ -86,7 +86,7 @@ export default function VelenLandingPage() {
                         </div>
 
                         {/* Problem 2: Fragmented Data */}
-                        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 hover:border-blue-500/30 transition-colors group">
+                        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 hover:border-blue-500/30 transition-colors group text-center">
                             <div className="w-20 h-20 bg-slate-950 rounded-2xl flex items-center justify-center mb-8 mx-auto border border-slate-800 group-hover:border-blue-500/30 transition-colors shadow-lg">
                                 <Layers className="w-10 h-10 text-blue-400" />
                             </div>
@@ -101,7 +101,7 @@ export default function VelenLandingPage() {
                         </div>
 
                         {/* Problem 3: Delayed Insights */}
-                        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 hover:border-red-500/30 transition-colors group">
+                        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 hover:border-red-500/30 transition-colors group text-center">
                             <div className="w-20 h-20 bg-slate-950 rounded-2xl flex items-center justify-center mb-8 mx-auto border border-slate-800 group-hover:border-red-500/30 transition-colors shadow-lg">
                                 <Clock className="w-10 h-10 text-red-400" />
                             </div>
@@ -128,7 +128,7 @@ export default function VelenLandingPage() {
                         </span>
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-slate-900/40 p-8 rounded-3xl border border-slate-800/60 flex flex-col items-center text-center gap-6 hover:border-purple-500/30 transition-all hover:bg-slate-900/60">
+                        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800/60 flex flex-col items-center text-center gap-6 hover:border-purple-500/30 transition-all hover:bg-slate-900/60">
                             <TrendingUp className="w-12 h-12 text-purple-400" />
                             <div>
                                 <h3 className="text-lg font-bold text-slate-200 mb-3">점진적 개선</h3>
