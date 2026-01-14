@@ -1,4 +1,4 @@
-import { CheckCircle2, Info, ChevronRight } from 'lucide-react';
+import { CheckCircle2, Info, ChevronRight, UserPlus } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function GA4GuidePage() {
                         <div className="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-blue-500/20 shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]">
                             1
                         </div>
-                        <h2 className="text-3xl font-bold">API 활성화 및 서비스 계정 생성</h2>
+                        <h2 className="text-3xl font-bold">API 활성화 및 서비스 계정 생성 시작</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
                             <p>
                                 <a href="https://console.cloud.google.com" target="_blank" rel="noreferrer" className="text-purple-400 hover:text-purple-300 underline underline-offset-4 transition-colors">Google Cloud Console</a>에 접속해 주세요.
@@ -43,7 +43,7 @@ export default function GA4GuidePage() {
                                 상단 검색창에 <strong className="text-white">"Google Analytics Data API"</strong>를 검색하여 <strong className="text-blue-400">사용(Enable)</strong> 버튼을 눌러주세요.
                             </p>
                             <p>
-                                그 후, <strong className="text-white">"Service Accounts"</strong> 메뉴로 이동하여 <strong className="text-white">+ Create Service Account</strong>를 클릭해 계정을 생성해 주세요.
+                                그 후, <strong className="text-white">"Service Accounts"</strong> 메뉴로 이동하여 <strong className="text-white">+ Create Service Account</strong>를 클릭하세요.
                             </p>
                         </div>
                     </div>
@@ -56,37 +56,84 @@ export default function GA4GuidePage() {
                     </div>
                 </div>
 
-                {/* Step 2 */}
+                {/* Step 2 (NEW) */}
                 <div className="group relative grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
                     <div className="order-2 md:order-1 relative group-hover:-translate-y-2 transition-transform duration-500">
                         <img
-                            src="/images/ga4/step2_download_key.png"
-                            alt="Create and Download JSON Key"
-                            className="rounded-xl border border-slate-700 bg-slate-900 w-full aspect-video object-cover invert hue-rotate-180 saturate-200"
+                            src="/images/ga4/step_create_details.png"
+                            alt="Service Account Details Form"
+                            className="rounded-xl border border-slate-700 bg-slate-900 w-full aspect-video object-cover"
                         />
                     </div>
                     <div className="space-y-6 md:order-2">
-                        <div className="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-purple-500/20 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)]">
+                        <div className="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-indigo-500/20 shadow-[0_0_20px_-5px_rgba(99,102,241,0.3)]">
                             2
+                        </div>
+                        <h2 className="text-3xl font-bold">서비스 계정 정보 입력</h2>
+                        <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
+                            <p>다음과 같이 세부 정보를 입력해 주세요:</p>
+                            <ul className="space-y-3 bg-slate-900/50 p-6 rounded-xl border border-slate-800 text-base">
+                                <li>
+                                    <span className="text-white font-semibold block mb-1">Service account name</span>
+                                    <span className="text-slate-400">예시: </span>
+                                    <code className="text-purple-300 bg-purple-500/10 px-1.5 py-0.5 rounded">view-analytics</code>
+                                    <span className="text-slate-500 ml-1">(식별하기 쉬운 이름)</span>
+                                </li>
+                                <li>
+                                    <span className="text-white font-semibold block mb-1">Service account ID</span>
+                                    <span className="text-slate-400">자동으로 입력되므로 수정하지 않아도 됩니다.</span>
+                                </li>
+                                <li>
+                                    <span className="text-white font-semibold block mb-1">Service account description</span>
+                                    <span className="text-slate-400">예시: </span>
+                                    <code className="text-purple-300 bg-purple-500/10 px-1.5 py-0.5 rounded">View Analytics</code>
+                                </li>
+                            </ul>
+                            <p>
+                                입력 후 <strong className="text-blue-400">만들기 및 계속(Create and Continue)</strong>을 클릭하고, 이후 단계는 건너뛰고 <strong className="text-white">완료(Done)</strong>를 누르세요.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Step 3 (Previously Step 2) */}
+                <div className="group relative grid md:grid-cols-2 gap-12 items-center">
+                    <div className="space-y-6">
+                        <div className="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-purple-500/20 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)]">
+                            3
                         </div>
                         <h2 className="text-3xl font-bold">키 다운로드 (JSON)</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
-                            <p>생성된 서비스 계정을 클릭하고 <strong className="text-white">키(KEYS)</strong> 탭으로 이동하세요.</p>
+                            <p>생성된 서비스 계정을 목록에서 클릭하고 <strong className="text-white">키(KEYS)</strong> 탭으로 이동하세요.</p>
                             <p><span className="inline-flex items-center gap-1 font-semibold text-white bg-slate-800 px-2 py-0.5 rounded border border-slate-700">키 추가 <ChevronRight className="w-3 h-3" /> 새 키 만들기</span>를 클릭하세요.</p>
-                            <p><strong className="text-white">"JSON"</strong>을 선택하고 만들기를 누르면 키 파일이 다운로드됩니다.</p>
+                            <p><strong className="text-white">"JSON"</strong>을 선택하고 만들기를 누르면 키 파일이 컴퓨터에 다운로드됩니다.</p>
                             <div className="bg-purple-500/10 border border-purple-500/30 p-4 rounded-lg text-sm text-purple-300 flex items-start gap-3">
                                 <Info className="w-5 h-5 shrink-0 mt-0.5" />
                                 <span>*다운로드된 파일은 Velen에 등록해야 합니다.</span>
                             </div>
                         </div>
                     </div>
+                    <div className="relative group-hover:-translate-y-2 transition-transform duration-500">
+                        <img
+                            src="/images/ga4/step2_download_key.png"
+                            alt="Create and Download JSON Key"
+                            className="rounded-xl border border-slate-700 bg-slate-900 w-full aspect-video object-cover invert hue-rotate-180 saturate-200"
+                        />
+                    </div>
                 </div>
 
-                {/* Step 3 */}
-                <div className="group relative grid md:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-6">
+                {/* Step 4 (Previously Step 3) */}
+                <div className="group relative grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
+                    <div className="order-2 md:order-1 relative group-hover:-translate-y-2 transition-transform duration-500">
+                        <img
+                            src="/images/ga4/step3_copy_email.png"
+                            alt="Copy Service Account Email"
+                            className="rounded-xl border border-slate-700 bg-slate-900 w-full aspect-video object-cover"
+                        />
+                    </div>
+                    <div className="space-y-6 md:order-2">
                         <div className="w-12 h-12 bg-green-500/20 text-green-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-green-500/20 shadow-[0_0_20px_-5px_rgba(34,197,94,0.3)]">
-                            3
+                            4
                         </div>
                         <h2 className="text-3xl font-bold">이메일 주소 복사하기</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
@@ -97,27 +144,13 @@ export default function GA4GuidePage() {
                             </code>
                         </div>
                     </div>
-                    <div className="relative group-hover:-translate-y-2 transition-transform duration-500">
-                        <img
-                            src="/images/ga4/step3_copy_email.png"
-                            alt="Copy Service Account Email"
-                            className="rounded-xl border border-slate-700 bg-slate-900 w-full aspect-video object-cover"
-                        />
-                    </div>
                 </div>
 
-                {/* Step 4 */}
-                <div className="group relative grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
-                    <div className="order-2 md:order-1 relative group-hover:-translate-y-2 transition-transform duration-500">
-                        <img
-                            src="/images/ga4/step4_add_user.png"
-                            alt="GA4 Add User Screen"
-                            className="rounded-xl border border-slate-700 bg-slate-900 w-full aspect-video object-cover"
-                        />
-                    </div>
-                    <div className="space-y-6 md:order-2">
+                {/* Step 5 (Previously Step 4) */}
+                <div className="group relative grid md:grid-cols-2 gap-12 items-center">
+                    <div className="space-y-6">
                         <div className="w-12 h-12 bg-orange-500/20 text-orange-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-orange-500/20 shadow-[0_0_20px_-5px_rgba(249,115,22,0.3)]">
-                            4
+                            5
                         </div>
                         <h2 className="text-3xl font-bold">GA4에 사용자 추가하기</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
@@ -126,6 +159,13 @@ export default function GA4GuidePage() {
                             <p>우측 상단 <strong className="text-blue-400">+</strong> 버튼을 눌러 사용자를 추가하고, 복사한 이메일을 붙여넣으세요.</p>
                             <p>권한은 <strong className="text-white">뷰어(Viewer)</strong>로 설정해 주세요.</p>
                         </div>
+                    </div>
+                    <div className="relative group-hover:-translate-y-2 transition-transform duration-500">
+                        <img
+                            src="/images/ga4/step4_add_user.png"
+                            alt="GA4 Add User Screen"
+                            className="rounded-xl border border-slate-700 bg-slate-900 w-full aspect-video object-cover"
+                        />
                     </div>
                 </div>
 
