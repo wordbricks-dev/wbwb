@@ -2,7 +2,7 @@ import { CheckCircle2, Info, ChevronRight, UserPlus } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'How to get Google Analytics 4 API Key - Velen',
+    title: 'How to Integrate Google Analytics 4 (GA4) - Velen',
     description: 'Step-by-step guide to connecting your Google Analytics 4 account to Velen.',
 };
 
@@ -15,13 +15,13 @@ export default function GA4GuidePage() {
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6 animate-in fade-in zoom-in duration-700">
                     <div className="inline-flex items-center gap-2 text-purple-400 font-medium bg-purple-500/10 px-4 py-1.5 rounded-full text-sm mb-4 border border-purple-500/20">
                         <Info className="w-4 h-4" />
-                        <span>설정 가이드</span>
+                        <span>Setup Guide</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 text-transparent bg-clip-text">
-                        Google Analytics 4 (GA4) 연동 가이드
+                        Google Analytics 4 (GA4) Integration Guide
                     </h1>
                     <p className="text-xl md:text-2xl text-slate-400 leading-relaxed max-w-2xl mx-auto font-light">
-                        Velen이 데이터를 분석할 수 있도록 Google Cloud Service Account를 생성하고 GA4에서 조회 권한을 부여해 주세요.
+                        To allow Velen to analyze data, create a Google Cloud Service Account and grant view permissions in GA4.
                     </p>
                 </div>
             </section>
@@ -34,16 +34,16 @@ export default function GA4GuidePage() {
                         <div className="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-blue-500/20 shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]">
                             1
                         </div>
-                        <h2 className="text-3xl font-bold">API 활성화 및 서비스 계정 생성 시작</h2>
+                        <h2 className="text-3xl font-bold">Enable API and Start Creating Service Account</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
                             <p>
-                                <a href="https://console.cloud.google.com" target="_blank" rel="noreferrer" className="text-purple-400 hover:text-purple-300 underline underline-offset-4 transition-colors">Google Cloud Console</a>에 접속해 주세요.
+                                Please access <a href="https://console.cloud.google.com" target="_blank" rel="noreferrer" className="text-purple-400 hover:text-purple-300 underline underline-offset-4 transition-colors">Google Cloud Console</a>.
                             </p>
                             <p>
-                                상단 검색창에 <strong className="text-white">"Google Analytics Data API"</strong>를 검색하여 <strong className="text-blue-400">사용(Enable)</strong> 버튼을 눌러주세요.
+                                Search for <strong className="text-white">"Google Analytics Data API"</strong> in the top search bar and click the <strong className="text-blue-400">Enable</strong> button.
                             </p>
                             <p>
-                                그 후, <strong className="text-white">"Service Accounts"</strong> 메뉴로 이동하여 <strong className="text-white">+ Create Service Account</strong>를 클릭하세요.
+                                After that, go to the <strong className="text-white">"Service Accounts"</strong> menu and click <strong className="text-white">+ Create Service Account</strong>.
                             </p>
                         </div>
                     </div>
@@ -69,28 +69,28 @@ export default function GA4GuidePage() {
                         <div className="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-indigo-500/20 shadow-[0_0_20px_-5px_rgba(99,102,241,0.3)]">
                             2
                         </div>
-                        <h2 className="text-3xl font-bold">서비스 계정 정보 입력</h2>
+                        <h2 className="text-3xl font-bold">Enter Service Account Details</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
-                            <p>다음과 같이 세부 정보를 입력해 주세요:</p>
+                            <p>Please enter the details as follows:</p>
                             <ul className="space-y-3 bg-slate-900/50 p-6 rounded-xl border border-slate-800 text-base">
                                 <li>
                                     <span className="text-white font-semibold block mb-1">Service account name</span>
-                                    <span className="text-slate-400">예시: </span>
+                                    <span className="text-slate-400">Example: </span>
                                     <code className="text-purple-300 bg-purple-500/10 px-1.5 py-0.5 rounded">view-analytics</code>
-                                    <span className="text-slate-500 ml-1">(식별하기 쉬운 이름)</span>
+                                    <span className="text-slate-500 ml-1">(Easy to identify name)</span>
                                 </li>
                                 <li>
                                     <span className="text-white font-semibold block mb-1">Service account ID</span>
-                                    <span className="text-slate-400">자동으로 입력되므로 수정하지 않아도 됩니다.</span>
+                                    <span className="text-slate-400">It is automatically entered, so you don't need to modify it.</span>
                                 </li>
                                 <li>
                                     <span className="text-white font-semibold block mb-1">Service account description</span>
-                                    <span className="text-slate-400">예시: </span>
+                                    <span className="text-slate-400">Example: </span>
                                     <code className="text-purple-300 bg-purple-500/10 px-1.5 py-0.5 rounded">View Analytics</code>
                                 </li>
                             </ul>
                             <p>
-                                입력 후 <strong className="text-blue-400">만들기 및 계속(Create and Continue)</strong>을 클릭하고, 이후 단계는 건너뛰고 <strong className="text-white">완료(Done)</strong>를 누르세요.
+                                After entering, click <strong className="text-blue-400">Create and Continue</strong>, then skip the subsequent steps and click <strong className="text-white">Done</strong>.
                             </p>
                         </div>
                     </div>
@@ -102,14 +102,14 @@ export default function GA4GuidePage() {
                         <div className="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-purple-500/20 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)]">
                             3
                         </div>
-                        <h2 className="text-3xl font-bold">키 다운로드 (JSON)</h2>
+                        <h2 className="text-3xl font-bold">Download Key (JSON)</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
-                            <p>생성된 서비스 계정을 목록에서 클릭하고 <strong className="text-white">키(KEYS)</strong> 탭으로 이동하세요.</p>
-                            <p><span className="inline-flex items-center gap-1 font-semibold text-white bg-slate-800 px-2 py-0.5 rounded border border-slate-700">키 추가 <ChevronRight className="w-3 h-3" /> 새 키 만들기</span>를 클릭하세요.</p>
-                            <p><strong className="text-white">"JSON"</strong>을 선택하고 만들기를 누르면 키 파일이 컴퓨터에 다운로드됩니다.</p>
+                            <p>Click the created service account from the list and go to the <strong className="text-white">KEYS</strong> tab.</p>
+                            <p>Click <span className="inline-flex items-center gap-1 font-semibold text-white bg-slate-800 px-2 py-0.5 rounded border border-slate-700">Add key <ChevronRight className="w-3 h-3" /> Create new key</span>.</p>
+                            <p>Select <strong className="text-white">"JSON"</strong> and click Create to download the key file to your computer.</p>
                             <div className="bg-purple-500/10 border border-purple-500/30 p-4 rounded-lg text-sm text-purple-300 flex items-start gap-3">
                                 <Info className="w-5 h-5 shrink-0 mt-0.5" />
-                                <span>*다운로드된 파일은 Velen에 등록해야 합니다.</span>
+                                <span>*The downloaded file must be registered in Velen.</span>
                             </div>
                         </div>
                     </div>
@@ -135,10 +135,10 @@ export default function GA4GuidePage() {
                         <div className="w-12 h-12 bg-green-500/20 text-green-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-green-500/20 shadow-[0_0_20px_-5px_rgba(34,197,94,0.3)]">
                             4
                         </div>
-                        <h2 className="text-3xl font-bold">이메일 주소 복사하기</h2>
+                        <h2 className="text-3xl font-bold">Copy Email Address</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
-                            <p>서비스 계정 목록에서 방금 만든 계정의 <strong className="text-white">이메일(Email)</strong> 주소를 찾아 복사해 주세요.</p>
-                            <p>형식은 다음과 같습니다:</p>
+                            <p>Find and copy the <strong className="text-white">Email</strong> address of the account you just created from the service account list.</p>
+                            <p>The format is as follows:</p>
                             <code className="block bg-slate-900 border border-slate-800 p-3 rounded-lg text-slate-300 font-mono text-sm break-all">
                                 my-app-analytics@my-project-id.iam.gserviceaccount.com
                             </code>
@@ -152,12 +152,12 @@ export default function GA4GuidePage() {
                         <div className="w-12 h-12 bg-orange-500/20 text-orange-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-orange-500/20 shadow-[0_0_20px_-5px_rgba(249,115,22,0.3)]">
                             5
                         </div>
-                        <h2 className="text-3xl font-bold">GA4에 사용자 추가하기</h2>
+                        <h2 className="text-3xl font-bold">Add User to GA4</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
-                            <p><a href="https://analytics.google.com" target="_blank" rel="noreferrer" className="text-purple-400 hover:text-purple-300 underline underline-offset-4 transition-colors">Google Analytics</a> 관리자 페이지로 이동하세요.</p>
-                            <p><strong className="text-white">관리(Admin) {'>'} 속성(Property) {'>'} 속성 액세스 관리(Property Access Management)</strong> 메뉴를 클릭하세요.</p>
-                            <p>우측 상단 <strong className="text-blue-400">+</strong> 버튼을 눌러 사용자를 추가하고, 복사한 이메일을 붙여넣으세요.</p>
-                            <p>권한은 <strong className="text-white">뷰어(Viewer)</strong>로 설정해 주세요.</p>
+                            <p>Go to the <a href="https://analytics.google.com" target="_blank" rel="noreferrer" className="text-purple-400 hover:text-purple-300 underline underline-offset-4 transition-colors">Google Analytics</a> Admin page.</p>
+                            <p>Click the <strong className="text-white">Admin {'>'} Property {'>'} Property Access Management</strong> menu.</p>
+                            <p>Click the <strong className="text-blue-400">+</strong> button at the top right to add a user, and paste the copied email.</p>
+                            <p>Please set the role to <strong className="text-white">Viewer</strong>.</p>
                         </div>
                     </div>
                     <div className="relative group-hover:-translate-y-2 transition-transform duration-500">
@@ -182,18 +182,18 @@ export default function GA4GuidePage() {
                         <div className="w-12 h-12 bg-pink-500/20 text-pink-400 rounded-2xl flex items-center justify-center font-bold text-xl border border-pink-500/20 shadow-[0_0_20px_-5px_rgba(236,72,153,0.3)]">
                             6
                         </div>
-                        <h2 className="text-3xl font-bold">Property ID 복사</h2>
+                        <h2 className="text-3xl font-bold">Copy Property ID</h2>
                         <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
                             <p>
-                                좌측 메뉴에서 <strong className="text-white">속성(Property) {'>'} 속성 세부정보(Property Details)</strong>로 이동하세요.
+                                Go to <strong className="text-white">Property {'>'} Property Details</strong> in the left menu.
                             </p>
                             <p>
-                                우측 상단에 표시된 숫자 값인 <strong className="text-white">속성 ID(Property ID)</strong>를 복사하세요.
+                                Copy the <strong className="text-white">Property ID</strong> listed at the top right.
                             </p>
                             <div className="bg-pink-500/10 border border-pink-500/20 p-4 rounded-xl inline-block mt-2">
                                 <p className="text-pink-300 font-medium flex items-center gap-2">
                                     <Info className="w-5 h-5" />
-                                    Velen에 연결할 때 이 ID가 필요합니다.
+                                    This ID is required when connecting to Velen.
                                 </p>
                             </div>
                         </div>
@@ -208,14 +208,14 @@ export default function GA4GuidePage() {
                             <div className="mx-auto w-20 h-20 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mb-6">
                                 <CheckCircle2 className="w-10 h-10" />
                             </div>
-                            <h2 className="text-4xl font-bold text-white">이제 연동할 준비가 되었습니다!</h2>
+                            <h2 className="text-4xl font-bold text-white">Integration Ready!</h2>
                             <p className="text-xl text-slate-400">
-                                다운로드받은 <code className="bg-slate-800 px-2 py-1 rounded text-orange-300 font-mono text-base">.json</code> 키 파일을 사용하여 Velen에 연결하세요.
+                                Connect to Velen using the downloaded <code className="bg-slate-800 px-2 py-1 rounded text-orange-300 font-mono text-base">.json</code> key file.
                             </p>
                             <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl inline-block">
                                 <p className="text-red-300 font-medium flex items-center gap-2">
                                     <Info className="w-5 h-5" />
-                                    GA4 데이터가 보이기까지 최대 24시간이 걸릴 수 있습니다.
+                                    It may take up to 24 hours for GA4 data to appear.
                                 </p>
                             </div>
                         </div>
