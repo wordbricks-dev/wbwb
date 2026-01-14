@@ -174,7 +174,7 @@ export default function BigQueryGuidePage() {
                             <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl inline-block">
                                 <p className="text-red-300 font-medium flex items-center gap-2">
                                     <Info className="w-5 h-5" />
-                                    이 파일은 비밀번호와 같습니다. Velen 서비스에 등록 후 안전하게 삭제해주세요.
+                                    이 파일의 보안관리는 매우 중요합니다. 유출되지 않도록 Velen 서비스에 등록 후 안전하게 삭제해주세요.
                                 </p>
                             </div>
                         </div>
