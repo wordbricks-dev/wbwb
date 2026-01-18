@@ -9,6 +9,7 @@ import { Topic } from './components/Topic';
 import { FAQ } from './components/FAQ';
 import { Sponsors } from './components/Sponsors';
 import { HackOptions } from './components/HackOptions';
+import { MealPreview } from './components/MealPreview';
 
 export default function HackathonPage() {
     return (
@@ -20,6 +21,7 @@ export default function HackathonPage() {
                 <Goal />
                 <Topic />
                 <HackOptions />
+                <MealPreview />
                 <Schedule />
                 <Sponsors />
                 <FAQ />
